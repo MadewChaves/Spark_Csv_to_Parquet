@@ -30,6 +30,9 @@ tamanho_parquet = float(os.path.getsize(f"{dir}/{file_name}.parquet"))
 diferenca_percentual = round((tamanho_csv - tamanho_parquet) / tamanho_csv * 100, 2)
 print("Size of the CSV file:",(os.path.getsize(f"{dir}/{file_name}.csv")),"bytes","\n\n","Size of the PARQUET file:",(os.path.getsize(f"{dir}/{file_name}.parquet")),"bytes","\n\n",f"Difference between the sizes in percentage: {diferenca_percentual} %")
 
+# Acces the resulltant archieves
+https://drive.google.com/drive/folders/1IynjcbJeG2o9x0ntUQyQjb211KsjU7dO?usp=sharing
+
 ### PORTUGUÊS
 
 ## Spark_Csv_to_Parquet
@@ -61,3 +64,6 @@ tamanho_csv = float(os.path.getsize(f"{dir}/{file_name}.csv"))
 tamanho_parquet = float(os.path.getsize(f"{dir}/{file_name}.parquet"))
 diferenca_percentual = round((tamanho_csv - tamanho_parquet) / tamanho_csv * 100, 2)
 print("Size of the CSV file:",(os.path.getsize(f"{dir}/{file_name}.csv")),"bytes","\n\n","Size of the PARQUET file:",(os.path.getsize(f"{dir}/{file_name}.parquet")),"bytes","\n\n",f"Difference between the sizes in percentage: {diferenca_percentual} %")
+
+# Acesse os arquivos resultantes
+https://drive.google.com/drive/folders/1IynjcbJeG2o9x0ntUQyQjb211KsjU7dO?usp=sharing
