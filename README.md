@@ -49,7 +49,7 @@ df_passagem_tratado = df_passagem.select([F.col(x).alias(x.replace('-','').repla
 df_passagem_tratado = df_passagem_tratado.withColumn('valor_da_passagem',F.expr("cast(replace(valor_da_passagem,',','.') as float)")) \
                                           .withColumn('taxa_de_serviço',F.expr("cast(replace(valor_da_passagem,',','.') as float)"))
 
-# salvando dados processados
+# Salvando dados processados
 Os dados processados ​​são salvos no formato Parquet:
 
 df_passagem_tratado.write.mode('overwrite').parquet(f'{dir}/{file_name}.parquet')
